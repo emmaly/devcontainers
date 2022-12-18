@@ -1,0 +1,79 @@
+{
+	"id": "emmaly-go-typescript-firebase-gce",
+	"version": "0.0.1",
+	"name": "Firebase+GCE in Go & TypeScript",
+	"description": "Environment for developing applications built using Go, TypeScript, Firebase, and Node.js. Also includes eslint, nvm, yarn, and Google Cloud CLI.",
+	"publisher": "emmaly",
+    "licenseURL": "https://github.com/emmaly/devcontainers/blob/main/LICENSE",
+	"options": {
+		"imageVariant": {
+			"type": "string",
+            "description": "Base image variant to use. Proposed options: Debian ('bullseye' or 'buster'), Ubuntu ('jammy', 'focal', or 'bionic'), or Alpine ('alpine-3.17', 'alpine-3.16', 'alpine-3.15', or 'alpine-3.14').",
+            "default": "bullseye",
+            "proposals": [
+                "bullseye",
+                "buster",
+                "jammy",
+                "focal",
+                "bionic",
+                "alpine-3.17",
+                "alpine-3.16",
+                "alpine-3.15",
+                "alpine-3.14"
+            ]
+		},
+        "goVersion": {
+            "type": "string",
+            "description": "Version of Go to install.",
+            "default": "latest",
+            "proposals": [
+                "latest",
+                "go1.19.4",
+                "go1.18.9",
+                "go1.20rc1"
+            ]
+        },
+        "nodeVersion": {
+            "type": "string",
+            "description": "Node.js version to use. Options: 'latest', '18', '16', '14', 'lts', 'none'.",
+            "default": "latest",
+            "proposals": [
+                "latest",
+                "18",
+                "16",
+                "14",
+                "lts",
+                "none"
+            ]
+        },
+        "typescriptVersion": {
+            "type": "string",
+            "description": "TypeScript version to use. Options: 'latest', '4', '3', 'none'.",
+            "default": "latest",
+            "proposals": [
+                "latest"
+            ]
+        },
+        "googleCloudCliVersion": {
+            "type": "string",
+            "description": "Google Cloud CLI version to use.",
+            "default": "latest",
+            "proposals": [
+                "latest"
+            ]
+        },
+        "firebaseCliVersion": {
+            "type": "string",
+            "description": "Firebase CLI version to use.",
+            "default": "latest",
+            "proposals": [
+                "latest"
+            ]
+        }
+	},
+	"platform": [
+		"Go",
+        "Node.js",
+        "TypeScript"
+	]
+}

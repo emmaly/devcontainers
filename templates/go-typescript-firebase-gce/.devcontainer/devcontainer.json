@@ -1,0 +1,37 @@
+{
+	"name": "Firebase+GCE in Go & TypeScript",
+	"image": "mcr.microsoft.com/devcontainers/base:${templateOption:imageVariant}",
+	"features": {
+		"ghcr.io/dhoeric/features/google-cloud-cli:1": {
+			"version": "${templateOption:googleCloudCliVersion}"
+		},
+		"ghcr.io/devcontainers/features/go:1": {
+			"version": "${templateOption:goVersion}"
+		},
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "${templateOption:nodeVersion}"
+		},
+		"ghcr.io/devcontainers-contrib/features/firebase-cli:1": {
+			"version": "${templateOption:firebaseCliVersion}"
+		},
+		"ghcr.io/devcontainers-contrib/features/typescript:1": {
+			"version": "${templateOption:typescriptVersion}"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "bash"
+			},
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"golang.go",
+				"googlecloudtools.cloudcode",
+				"mads-hartmann.bash-ide-vscode",
+				"redhat.vscode-yaml",
+				"rogalmic.bash-debug",
+				"svelte.svelte-vscode"
+			]
+		}
+	}
+}
