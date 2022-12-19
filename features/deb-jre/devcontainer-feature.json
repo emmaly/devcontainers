@@ -1,6 +1,6 @@
 {
     "name": "JRE in Debian-based distros",
-    "id": "emmaly-jre",
+    "id": "deb-jre",
     "version": "0.0.1",
     "description": "Installs JRE in Debian-based distros",
     "options": {
