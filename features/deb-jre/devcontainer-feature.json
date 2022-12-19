@@ -1,0 +1,33 @@
+{
+    "name": "JRE in Debian-based distros",
+    "id": "emmaly-jre",
+    "version": "0.0.1",
+    "description": "Installs JRE in Debian-based distros",
+    "options": {
+        "package": {
+            "description": "JRE package to install",
+            "type": "string",
+            "default": "default-jre-headless",
+            "proposals": [
+                "default-jre-headless",
+                "default-jre",
+                "openjdk-11-jre",
+                "openjdk-13-jre",
+                "openjdk-16-jre",
+                "openjdk-17-jre",
+                "openjdk-8-jre",
+                "none"
+            ]
+        },
+        "version": {
+            "description": "Version of jre package to install",
+            "type": "string",
+            "default": "latest",
+            "proposals": [
+                "latest",
+                "none",
+                "1.11"
+            ]
+        }
+    }
+}
